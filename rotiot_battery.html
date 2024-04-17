@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Abeeway battery life-time calculator</title>
-
+    <title>Trackers battery life-time calculator</title>
     <meta>
-        <link rel=icon href=https://www.abeeway.com/wp-content/uploads/2020/01/favicon.png sizes=32x32>
-        <link rel=icon href=https://www.abeeway.com/wp-content/uploads/2020/01/favicon.png sizes=192x192>
-        <link rel=apple-touch-icon href=https://www.abeeway.com/wp-content/uploads/2020/01/favicon.png>
-    </meta>
-
-    <style>
-        html {
-            margin: 10px;
-            font-family: sans-serif, Arial, Helvetica;
-            font-size: 90%;
-        }
-        h1 {
-            color: #008293;
-        }
-        legend {
-            color: #008293;
-            font-weight: bold;
-            font-size: 100%;
-        }
-        .flexcontainer {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            align-items: stretch;
-            align-content: flex-start
-        }
-        .flexitem { 
-            flex-flow: 1 1 1;
-            padding: 4px;
-            box-sizing: border-box;
-            min-width: 200px;
-        }
-        .flexitem1 { 
-            flex-flow: 1 1 1;
-            padding: 4px;
-            box-sizing: border-box;
-            min-width: 196px;
-        }
-        input[type="text"], input[type="number"], select, button, textarea {
-            width: 100%;
-            padding: 2px 3px 2px 3px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-        textarea {
-            width: 392px;
-            height: 150px;
-            padding: 2px 3px 2px 3px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-        .radiogroup { 
-            margin-bottom: 10px;
-        }       
+    <link rel=icon href=https://rotiot.net/api/images/public/aUz342Taxhl57gwpKNhoz5ttjmWSkv9e sizes=32x32>
+    <link rel=icon href=https://rotiot.net/api/images/public/aUz342Taxhl57gwpKNhoz5ttjmWSkv9e sizes=192x192>
+    <link rel=apple-touch-icon href=https://rotiot.net/api/images/public/aUz342Taxhl57gwpKNhoz5ttjmWSkv9e> </meta>
+        <style>
+    html {
+    margin: 10px;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 90%;
+    }
+    h1 {
+    color: #b50228;
+    }
+    legend {
+    color: #b50228;
+    font-weight: bold;
+    font-size: 100%;
+    }
+    .flexcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start
+    }
+    .flexitem {
+    flex-flow: 1 1 1;
+    padding: 4px;
+    box-sizing: border-box;
+    min-width: 200px;
+    }
+    .flexitem1 {
+    flex-flow: 1 1 1;
+    padding: 4px;
+    box-sizing: border-box;
+    min-width: 196px;
+    }
+    input[type="text"], input[type="number"], select, button, textarea {
+    width: 100%;
+    padding: 2px 3px 2px 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    }
+    textarea {
+    width: 392px;
+    height: 150px;
+    padding: 2px 3px 2px 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    }
+    .radiogroup {
+    margin-bottom: 10px;
+    }
     </style>
 </head>
+
 <body>
-    <img src="https://www.abeeway.com/wp-content/uploads/2019/06/Abeeway_LOGO_blue-small.png" alt="Abeeway Logo" height=40px>
-    <h1>Abeeway battery life-time calculator</h1>
+    <img src="https://rotiot.net/api/images/public/aUz342Taxhl57gwpKNhoz5ttjmWSkv9e" alt="Rotiot Cloud Logo"
+        height=40px>
+    <h1>Trackers battery life-time calculator</h1>
     <p>
-        The results as an output of this tool can vary from the field due to impact of environment and other ambient factors.</br>
+        The results as an output of this tool can vary from the field due to impact of environment and other ambient
+        factors.</br>
         The values that should be entered should be typical average usage of the tracker and NOT worst case scenario.
     </p>
     <div class="flexcontainer">
@@ -106,7 +107,7 @@
                     <option value=3>3</option>
                     <option value=4>4</option>
                 </select><br />
-                
+
                 <label for="accelerometer_on">Accelerometer On:</label>
                 <input type="checkbox" id="accelerometer_on" name="accelerometer_on" checked><br />
             </div>
@@ -117,7 +118,8 @@
             <legend>Custom messages:</legend>
 
             <label for="custom_msg_nof_msg_per_day">Num. of msg/day:</label><br />
-            <input type="number" min="0" id="custom_msg_nof_msg_per_day" name="custom_msg_nof_msg_per_day" value="0"><br />
+            <input type="number" min="0" id="custom_msg_nof_msg_per_day" name="custom_msg_nof_msg_per_day"
+                value="0"><br />
 
             <label for="custom_msg_payl_len">Payload length [byte]:</label><br />
             <input type="number" min="0" id="custom_msg_payl_len" name="custom_msg_payl_len" value="17">
@@ -128,7 +130,8 @@
             <legend>Heartbeat messages:</legend>
 
             <label for="heartbeat_nof_msg_per_day">Num. of msg/day:</label><br />
-            <input type="number" min="0" id="heartbeat_nof_msg_per_day" name="heartbeat_nof_msg_per_day" value="0"><br />
+            <input type="number" min="0" id="heartbeat_nof_msg_per_day" name="heartbeat_nof_msg_per_day"
+                value="0"><br />
 
         </fieldset>
 
@@ -202,7 +205,8 @@
             <legend>Custom BLE usage:</legend>
 
             <label for="custom_ble_usage_time_per_day">Usage per day [hour]:</label><br />
-            <input type="number" min="0" id="custom_ble_usage_time_per_day" name="custom_ble_usage_time_per_day" value="0"><br />
+            <input type="number" min="0" id="custom_ble_usage_time_per_day" name="custom_ble_usage_time_per_day"
+                value="0"><br />
             <label for="custom_ble_operation">BLE operation:</label><br />
             <select id="custom_ble_operation" name="custom_ble_operation">
                 <option value="fast_adv">Fast advertisement (2s)</option>
@@ -221,18 +225,16 @@
             <div class='flexitem1'>
 
                 <label for="scancoll_nof_msg_per_day">Num. of report/day:</label><br />
-                <input type="number" min="0" id="scancoll_nof_msg_per_day" name="scancoll_nof_msg_per_day" value="0"><br />
+                <input type="number" min="0" id="scancoll_nof_msg_per_day" name="scancoll_nof_msg_per_day"
+                    value="0"><br />
 
                 <div id="scancoll_tech_radiogroup" class="radiogroup">
                     Applied technology:<br />
-                    &nbsp;<input 
-                        type="radio" id="scancoll_tech_ble" name="scancoll_tech" value="BLE" checked
-                        onchange = "javascript:document.getElementById('scancoll_idtype_radiogroup').style.display='block'"
-                    >
+                    &nbsp;<input type="radio" id="scancoll_tech_ble" name="scancoll_tech" value="BLE" checked
+                        onchange="javascript:document.getElementById('scancoll_idtype_radiogroup').style.display='block'">
                     <label for="male">BLE</label>
-                    &nbsp;<input 
-                        type="radio" id="scancoll_tech_wifi" name="scancoll_tech" value="WiFi"
-                        onchange = "javascript:document.getElementById('scancoll_idtype_radiogroup').style.display='none'">
+                    &nbsp;<input type="radio" id="scancoll_tech_wifi" name="scancoll_tech" value="WiFi"
+                        onchange="javascript:document.getElementById('scancoll_idtype_radiogroup').style.display='none'">
                     <label for="female">WiFi</label><br>
                 </div>
 
@@ -304,7 +306,7 @@
 
             <legend>Calculation:</legend>
 
-            <button onClick = "calculate()">Calculate</button><br />
+            <button onClick="calculate()">Calculate</button><br />
 
             <label for="result">Result:</label><br />
             <textarea id="result"></textarea>
@@ -316,7 +318,6 @@
 </body>
 
 <script>
-
     /*********************************************************************/
     /***** GUI SCRIPTS                                               *****/
     /*********************************************************************/
@@ -325,49 +326,51 @@
 
         let input = {
 
-            product:                document.getElementById('product').value,                       // industrial|compact|micro|smart_badge
-            tx_power:               document.getElementById('tx_power').value,                      // _14dBm_|_17dBm_|_19dBm
-            sf:                     parseInt(document.getElementById('sf').value),                            // 7|8|9|10|11|12
-            nof_msg_repetition:     parseInt(document.getElementById('nof_msg_repetition').value),
-            accelerometer_on:       document.getElementById('accelerometer_on').checked,
+            product: document.getElementById('product').value, // industrial|compact|micro|smart_badge
+            tx_power: document.getElementById('tx_power').value, // _14dBm_|_17dBm_|_19dBm
+            sf: parseInt(document.getElementById('sf').value), // 7|8|9|10|11|12
+            nof_msg_repetition: parseInt(document.getElementById('nof_msg_repetition').value),
+            accelerometer_on: document.getElementById('accelerometer_on').checked,
 
             custom_msg: {
-                nof_msg_per_day:    parseInt(document.getElementById('custom_msg_nof_msg_per_day').value),
-                payl_len:           parseInt(document.getElementById('custom_msg_payl_len').value),               // [bytes]
+                nof_msg_per_day: parseInt(document.getElementById('custom_msg_nof_msg_per_day').value),
+                payl_len: parseInt(document.getElementById('custom_msg_payl_len').value), // [bytes]
             },
             heartbeat: {
-                nof_msg_per_day:    parseInt(document.getElementById('heartbeat_nof_msg_per_day').value),
+                nof_msg_per_day: parseInt(document.getElementById('heartbeat_nof_msg_per_day').value),
             },
             gps: {
-                nof_msg_per_day:    parseInt(document.getElementById('gps_nof_msg_per_day').value),
-                ttff:               parseFloat(document.getElementById('gps_ttff').value),                      // [s]
-                conv_time:          parseFloat(document.getElementById('gps_conv_time').value),                 // [s]
+                nof_msg_per_day: parseInt(document.getElementById('gps_nof_msg_per_day').value),
+                ttff: parseFloat(document.getElementById('gps_ttff').value), // [s]
+                conv_time: parseFloat(document.getElementById('gps_conv_time').value), // [s]
             },
             agps: {
-                nof_msg_per_day:    parseInt(document.getElementById('agps_nof_msg_per_day').value),
-                on_time:            parseFloat(document.getElementById('agps_on_time').value),                  // [s]
-                nof_satellites:     parseInt(document.getElementById('agps_nof_satellites').value),
+                nof_msg_per_day: parseInt(document.getElementById('agps_nof_msg_per_day').value),
+                on_time: parseFloat(document.getElementById('agps_on_time').value), // [s]
+                nof_satellites: parseInt(document.getElementById('agps_nof_satellites').value),
             },
             wifi: {
-                nof_msg_per_day:    parseInt(document.getElementById('wifi_nof_msg_per_day').value),
-                nof_bssid:          parseInt(document.getElementById('wifi_nof_bssid').value),                
+                nof_msg_per_day: parseInt(document.getElementById('wifi_nof_msg_per_day').value),
+                nof_bssid: parseInt(document.getElementById('wifi_nof_bssid').value),
             },
             ble: {
-                nof_msg_per_day:    parseInt(document.getElementById('ble_nof_msg_per_day').value),
-                nof_beaconid:       parseInt(document.getElementById('ble_nof_beaconid').value),
+                nof_msg_per_day: parseInt(document.getElementById('ble_nof_msg_per_day').value),
+                nof_beaconid: parseInt(document.getElementById('ble_nof_beaconid').value),
             },
             custom_ble: {
-                usage_time_per_day: parseFloat(document.getElementById('custom_ble_usage_time_per_day').value), 
-                operation:          document.getElementById('custom_ble_operation').value,    // fast_adv|slow_adv|connected|fast_scan|slow_scan
+                usage_time_per_day: parseFloat(document.getElementById('custom_ble_usage_time_per_day').value),
+                operation: document.getElementById('custom_ble_operation')
+                    .value, // fast_adv|slow_adv|connected|fast_scan|slow_scan
             },
             scan_collection: {
-                nof_msg_per_day:    parseInt(document.getElementById('scancoll_nof_msg_per_day').value),
-                tech:               document.getElementById('scancoll_tech_ble').checked ? "BLE" : "WiFi",
-                idtype:             document.getElementById('scancoll_tech_ble').checked && document.getElementById('scancoll_idtype_id').checked ? "ID" : "MAC",
-                max_payl_len:       parseInt(document.getElementById('scancoll_max_payl_len').value),
-                nof_id:             parseInt(document.getElementById('scancoll_nof_id').value),
+                nof_msg_per_day: parseInt(document.getElementById('scancoll_nof_msg_per_day').value),
+                tech: document.getElementById('scancoll_tech_ble').checked ? "BLE" : "WiFi",
+                idtype: document.getElementById('scancoll_tech_ble').checked && document.getElementById(
+                    'scancoll_idtype_id').checked ? "ID" : "MAC",
+                max_payl_len: parseInt(document.getElementById('scancoll_max_payl_len').value),
+                nof_id: parseInt(document.getElementById('scancoll_nof_id').value),
             },
-           
+
             // The following parameters will be implemented soon!!! 
             /*
             proximity: {
@@ -382,37 +385,39 @@
         let result = calculate_battery_life_time(input);
         // document.getElementById('result').value = JSON.stringify(result, null, 2);
 
-        let result_text = "Battery life time: " + result.battery_life_time + " days (" + (result.battery_life_time/365).toFixed(2) + " years)\n";
+        let result_text = "Battery life time: " + result.battery_life_time + " days (" + (result.battery_life_time /
+            365).toFixed(2) + " years)\n";
         result_text += "Energy distribution:\n";
-        if (result.current_distribution.custom_msg > 0) { 
-            result_text += "  Custom msg: " + result.current_distribution.custom_msg + " %\n"; 
+        if (result.current_distribution.custom_msg > 0) {
+            result_text += "  Custom msg: " + result.current_distribution.custom_msg + " %\n";
         }
-        if (result.current_distribution.heartbeat > 0) { 
-            result_text += "  Heartbeat: " + result.current_distribution.heartbeat + " %\n"; 
+        if (result.current_distribution.heartbeat > 0) {
+            result_text += "  Heartbeat: " + result.current_distribution.heartbeat + " %\n";
         }
-        if (result.current_distribution.gps > 0) { 
-            result_text += "  GPS: " + result.current_distribution.gps + " %\n"; 
+        if (result.current_distribution.gps > 0) {
+            result_text += "  GPS: " + result.current_distribution.gps + " %\n";
         }
-        if (result.current_distribution.agps > 0) { 
-            result_text += "  AGPS: " + result.current_distribution.agps + " %\n"; 
+        if (result.current_distribution.agps > 0) {
+            result_text += "  AGPS: " + result.current_distribution.agps + " %\n";
         }
-        if (result.current_distribution.wifi > 0) { 
-            result_text += "  WiFi: " + result.current_distribution.wifi + " %\n"; 
+        if (result.current_distribution.wifi > 0) {
+            result_text += "  WiFi: " + result.current_distribution.wifi + " %\n";
         }
-        if (result.current_distribution.ble > 0) { 
-            result_text += "  BLE: " + result.current_distribution.ble + " %\n"; 
+        if (result.current_distribution.ble > 0) {
+            result_text += "  BLE: " + result.current_distribution.ble + " %\n";
         }
-        if (result.current_distribution.custom_ble > 0) { 
-            result_text += "  Custom BLE: " + result.current_distribution.custom_ble + " %\n"; 
+        if (result.current_distribution.custom_ble > 0) {
+            result_text += "  Custom BLE: " + result.current_distribution.custom_ble + " %\n";
         }
-        if (result.current_distribution.scan_collection > 0) { 
-            result_text += "  Scan Collection: " + result.current_distribution.scan_collection + " %\n"; 
+        if (result.current_distribution.scan_collection > 0) {
+            result_text += "  Scan Collection: " + result.current_distribution.scan_collection + " %\n";
         }
-        if (result.current_distribution.accelerometer > 0) { 
-            result_text += "  Accelerometer: " + result.current_distribution.accelerometer + " %\n"; 
+        if (result.current_distribution.accelerometer > 0) {
+            result_text += "  Accelerometer: " + result.current_distribution.accelerometer + " %\n";
         }
-        if (result.current_distribution.quiesent_and_battery_leakage > 0) { 
-            result_text += "  Quiesent and Battery leakage: " + result.current_distribution.quiesent_and_battery_leakage + " %\n"; 
+        if (result.current_distribution.quiesent_and_battery_leakage > 0) {
+            result_text += "  Quiesent and Battery leakage: " + result.current_distribution
+                .quiesent_and_battery_leakage + " %\n";
         }
 
         document.getElementById('result').value = result_text;
@@ -423,9 +428,8 @@
 
 
     }
-
 </script>
 
-<script src="abeeway_battery.js"></script>
+<script src="rotiot_battery.js"></script>
 
 </html>
